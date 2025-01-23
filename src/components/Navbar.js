@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaPhoneAlt, FaEnvelope, FaClock } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope, FaClock, FaBars, FaTimes } from 'react-icons/fa';
 import logo from '../images/hag268logo.jpg';
 
 function Navbar() {
   const location = useLocation();
   const [isFixed, setIsFixed] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +17,10 @@ function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="absolute w-full z-50">
       {/* Transparent Top Row */}
@@ -25,7 +30,7 @@ function Navbar() {
           <p className="text-sm font-light">Welcome to HAG268, your trusted roofing solutions provider!</p>
 
           {/* Contact Info */}
-          <div className="flex space-x-4">
+          <div className="hidden md:flex space-x-4">
             <div className="flex items-center space-x-2">
               <FaPhoneAlt />
               <span className="text-sm">+123 456 789</span>
@@ -52,31 +57,39 @@ function Navbar() {
       >
         <div className="max-w-screen-xl mx-auto flex justify-between items-center px-4">
           {/* Logo */}
-          <h1 className="h-20 w-20">
-          <img
-              src={logo}
-              alt="About Us"
-              className="rounded-lg shadow-lg w-full"
-            />
-          
-            </h1>
+          <div className="h-16 w-16">
+            <img src={logo} alt="HAG268 Logo" className="rounded-lg shadow-lg w-full" />
+          </div>
+
+          {/* Hamburger Menu for Small Screens */}
+          <button
+            className="md:hidden text-white text-2xl focus:outline-none"
+            onClick={toggleMenu}
+          >
+            {isMenuOpen ? <FaTimes /> : <FaBars />}
+          </button>
 
           {/* Navigation Links */}
-          <ul className="flex space-x-6">
+          <ul
+            className={`absolute md:relative top-full left-0 w-full md:w-auto bg-amber-500 md:bg-transparent flex-col md:flex-row md:flex md:space-x-6 px-4 py-4 md:p-0 transition-all duration-300 ${
+              isMenuOpen ? 'flex' : 'hidden'
+            }`}
+          >
             {[
               { name: 'Home', path: '/' },
               { name: 'About', path: '/about' },
               { name: 'Products', path: '/products' },
               { name: 'Contact', path: '/contact' },
             ].map((link) => (
-              <li key={link.name}>
+              <li key={link.name} className="text-center md:text-left py-2 md:py-0">
                 <Link
                   to={link.path}
-                  className={`relative text-lg font-medium tracking-wide transition-colors duration-300 ${
+                  className={`relative text-lg font-medium tracking-wide block transition-colors duration-300 ${
                     location.pathname === link.path
                       ? 'text-blue-950'
                       : 'text-blue-950 hover:text-yellow-300'
                   }`}
+                  onClick={() => setIsMenuOpen(false)} // Close menu when a link is clicked
                 >
                   {link.name}
                   {/* Active Indicator */}

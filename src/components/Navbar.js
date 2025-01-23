@@ -33,7 +33,7 @@ function Navbar() {
           <div className="hidden md:flex space-x-4">
             <div className="flex items-center space-x-2">
               <FaPhoneAlt />
-              <span className="text-sm">+123 456 789</span>
+              <span className="text-sm">+234 8023205544</span>
             </div>
             <div className="flex items-center space-x-2">
               <FaEnvelope />

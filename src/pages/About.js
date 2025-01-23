@@ -103,7 +103,7 @@ function About() {
           <span className="mr-2">📍</span> 123 Roofing Ave, City, Country
         </li>
         <li className="flex items-center">
-          <span className="mr-2">📞</span> +123 456 789
+          <span className="mr-2">📞</span> +234 8023205544
         </li>
         <li className="flex items-center">
           <span className="mr-2">📧</span> info@hag268.com

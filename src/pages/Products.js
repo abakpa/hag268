@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa';
+
 import { Link } from 'react-router-dom';
 import backgroundImage from '../images/hag268prod3.jpg';
 import product1 from '../images/hag26816.png';
@@ -62,6 +64,78 @@ function Products() {
                 </Link>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+          <section className="py-16 bg-gray-800 text-white">
+        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          {/* Our Products Section */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Our Products</h3>
+            <ul className="space-y-2">
+              <li className="flex items-center text-sm">
+                <span className="mr-2">✔</span> Metal Roofing Sheets
+              </li>
+              <li className="flex items-center text-sm">
+                <span className="mr-2">✔</span> Asphalt Shingles
+              </li>
+              <li className="flex items-center text-sm">
+                <span className="mr-2">✔</span> Clay Roofing Tiles
+              </li>
+              <li className="flex items-center text-sm">
+                <span className="mr-2">✔</span> PVC Roofing Materials
+              </li>
+            </ul>
+          </div>
+          
+          {/* Company Links Section */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Company Links</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link to="/" className="hover:text-yellow-400">Home</Link>
+              </li>
+              <li>
+                <Link to="/about" className="hover:text-yellow-400">About</Link>
+              </li>
+              <li>
+                <Link to="/products" className="hover:text-yellow-400">Products</Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-yellow-400">Contact</Link>
+              </li>
+            </ul>
+          </div>
+      
+          {/* Contact Us Section */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+            <ul className="space-y-2 text-sm">
+              <li className="flex items-center">
+                <span className="mr-2">📍</span> 123 Roofing Ave, City, Country
+              </li>
+              <li className="flex items-center">
+                <span className="mr-2">📞</span> +234 8023205544
+              </li>
+              <li className="flex items-center">
+                <span className="mr-2">📧</span> info@hag268.com
+              </li>
+              <li className="flex space-x-4 mt-4">
+                <a href="https://facebook.com" target="_blank" rel="noreferrer" className="text-xl hover:text-blue-600">
+                  <FaFacebook />
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noreferrer" className="text-xl hover:text-blue-400">
+                  <FaTwitter />
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-xl hover:text-blue-700">
+                  <FaInstagram />
+                </a>
+                <a href="https://whatsapp.com" target="_blank" rel="noreferrer" className="text-xl hover:text-blue-700">
+                  <FaWhatsapp />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

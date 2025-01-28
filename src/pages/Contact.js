@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 import backgroundImage from '../images/contact5.jpeg';
@@ -6,6 +7,43 @@ import contactImage from '../images/contact.webp';
 
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    from_name: "",
+    from_email: "",
+    to_name:"HAG268",
+    message: "",
+  });
+
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        "service_prqh4f9", // Replace with your Service ID
+        "template_e5flt68", // Replace with your Template ID
+        formData,
+        "KBKrU3Pe_5jQx4OvV" // Replace with your Public Key
+      )
+      .then(
+        (response) => {
+          setSuccessMessage("Message sent successfully!");
+          setErrorMessage("");
+          setFormData({ from_name: "", from_email: "", message: "" });
+        },
+        (error) => {
+          setErrorMessage("Failed to send message. Please try again.");
+          setSuccessMessage("");
+        }
+      );
+  };
   return (
     <>
        <section
@@ -41,20 +79,45 @@ function Contact() {
           <h2 className="text-3xl font-bold text-center lg:text-left mb-6">
             Contact Us
           </h2>
-          <form className="space-y-4">
+          {successMessage && (
+        <div className="bg-green-100 text-green-800 px-4 py-2 rounded mb-4">
+          {successMessage}
+        </div>
+      )}
+      {errorMessage && (
+        <div className="bg-red-100 text-red-800 px-4 py-2 rounded mb-4">
+          {errorMessage}
+        </div>
+      )}
+          <form className="space-y-4" onSubmit={sendEmail}>
             <input
-              type="text"
+                 type="text"
+                 name="from_name"
+                 id="from_name"
+                 value={formData.from_name}
+                 onChange={handleChange}
+                 required
               placeholder="Name"
               className="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-amber-500"
             />
             <input
-              type="email"
+                  type="email"
+                  name="from_email"
+                  id="from_email"
+                  value={formData.from_email}
+                  onChange={handleChange}
+                  required
               placeholder="Email"
               className="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-amber-500"
             />
             <textarea
+               name="message"
+               id="message"
+               rows="5"
+               value={formData.message}
+               onChange={handleChange}
+               required
               placeholder="Message"
-              rows="5"
               className="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-amber-500"
             ></textarea>
             <button

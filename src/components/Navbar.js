@@ -57,10 +57,11 @@ function Navbar() {
       >
         <div className="max-w-screen-xl mx-auto flex justify-between items-center px-4">
           {/* Logo */}
+          <Link to='/'>
           <div className="h-16 w-16">
             <img src={logo} alt="HAG268 Logo" className="rounded-lg shadow-lg w-full" />
           </div>
-
+          </Link>
           {/* Hamburger Menu for Small Screens */}
           <button
             className="md:hidden text-white text-2xl focus:outline-none"

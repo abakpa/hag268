@@ -140,7 +140,7 @@ function ProductDetails() {
       <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
       <ul className="space-y-2 text-sm">
         <li className="flex items-center">
-          <span className="mr-2">📍</span> 123 Roofing Ave, City, Country
+          <span className="mr-2">📍</span> No 2 Abimbola street isolo industrial estate by IBWAS FILLING station isolo Lagos Nigeria.
         </li>
         <li className="flex items-center">
           <span className="mr-2">📞</span> +234 8023205544
@@ -158,7 +158,7 @@ function ProductDetails() {
           <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-xl hover:text-blue-700">
             <FaInstagram />
           </a>
-          <a href="https://whatsapp.com" target="_blank" rel="noreferrer" className="text-xl hover:text-blue-700">
+          <a href="https://wa.me/08169525150" target="_blank" rel="noreferrer" className="text-xl hover:text-blue-700">
             <FaWhatsapp />
           </a>
         </li>

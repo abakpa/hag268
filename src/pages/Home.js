@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa';
-import image1 from '../images/hag2683.webp';
-import image2 from '../images/hag26819.avif';
-import image3 from '../images/h2681.jpeg';
-import product1 from '../images/hag26816.png';
-import product2 from '../images/hag268nail.jpg';
-import product3 from '../images/hag26817.avif';
-import product4 from '../images/hag26815.avif';
-import product5 from '../images/hag26818.jpg';
-import product6 from '../images/hag26812.jpg';
+import image1 from '../images/shingles33.jpeg';
+import image2 from '../images/milanohag4.jpg';
+import image3 from '../images/classic1.jpg';
+import product1 from '../images/milano22.jpg';
+import product2 from '../images/nail2.jpg';
+import product3 from '../images/bondhag.avif';
+import product4 from '../images/shingle.jpg';
+import product5 from '../images/ridgeshag2.avif';
+import product6 from '../images/classic8.avif';
 import backgroundImage from '../images/S&M2.jpeg';
 import aboutImage from '../images/hag26821.avif'; // Replace with the correct image path
 
@@ -27,40 +27,40 @@ function Home() {
     },
     {
       image: image3,
-      title: "Expert Installation",
-      description: "Professional installation services for all your roofing needs.",
+      title: "Sales & Discounts",
+      description: "Enjoy great deals and discounts on all our roofing products.",
     },
   ];
 
   const products = [
     {
       image: product1,
-      title: "Metal Roofing Sheets",
+      title: "Miano",
       description: "Durable and stylish metal roofing sheets for long-lasting protection.",
     },
     {
       image: product2,
-      title: "Asphalt Shingles",
+      title: "Nails",
       description: "Premium asphalt shingles for residential and commercial buildings.",
     },
     {
       image: product3,
-      title: "Clay Roofing Tiles",
+      title: "Bond",
       description: "Elegant and eco-friendly clay roofing tiles for a timeless look.",
     },
     {
       image: product4,
-      title: "Clay Roofing Tiles",
+      title: "Shingle",
       description: "Elegant and eco-friendly clay roofing tiles for a timeless look.",
     },
     {
       image: product5,
-      title: "Clay Roofing Tiles",
+      title: "Ridges",
       description: "Elegant and eco-friendly clay roofing tiles for a timeless look.",
     },
     {
       image: product6,
-      title: "Clay Roofing Tiles",
+      title: "Classic",
       description: "Elegant and eco-friendly clay roofing tiles for a timeless look.",
     },
   ];

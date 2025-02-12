@@ -3,20 +3,25 @@ import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 
 import { Link } from 'react-router-dom';
 import backgroundImage from '../images/classic2.jpg';
-import product1 from '../images/hag26816.png';
-import product2 from '../images/hag268nail.jpg';
-import product3 from '../images/ridgeshag2.avif';
-import product4 from '../images/hag26815.avif';
+import product1 from '../images/milano22.jpg';
+import product2 from '../images/nail2.jpg';
+import product3 from '../images/bondhag.avif';
+import product4 from '../images/shingle.jpg';
+import product5 from '../images/ridgeshag2.avif';
+import product6 from '../images/classic8.avif';
+import product7 from '../images/sealant.jpg';
+import product8 from '../images/flatsheet.avif';
+
 
 const products = [
-  { id: 1, name: 'Corrugated Roofing Sheets', image: product1 },
-  { id: 2, name: 'Roofing Nails', image: product2 },
-  { id: 3, name: 'Ridges', image: product3 },
-  { id: 4, name: 'Stone Coated Sheets', image: product4 },
-  { id: 5, name: 'Corrugated Roofing Sheets', image: product1 },
-  { id: 6, name: 'Roofing Nails', image: product2 },
-  { id: 7, name: 'Ridges', image: product3 },
-  { id: 8, name: 'Stone Coated Sheets', image: product4 },
+  { id: 1, name: 'Milano', image: product1 },
+  { id: 2, name: 'Nails', image: product2 },
+  { id: 3, name: 'Bond', image: product3 },
+  { id: 4, name: 'Shingles', image: product4 },
+  { id: 5, name: 'Ridges', image: product5 },
+  { id: 6, name: 'Classic', image: product6 },
+  { id: 7, name: 'Sealant', image: product7 },
+  { id: 8, name: 'Flat Sheets', image: product8 },
 ];
 
 function Products() {

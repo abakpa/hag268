@@ -10,6 +10,8 @@ import product3 from '../images/bondhag.avif';
 import product4 from '../images/shingle.jpg';
 import product5 from '../images/ridgeshag2.avif';
 import product6 from '../images/classic8.avif';
+import product7 from '../images/sealant.jpg';
+import product8 from '../images/flatsheet.avif';
 import backgroundImage from '../images/S&M2.jpeg';
 import aboutImage from '../images/hag26821.avif'; // Replace with the correct image path
 
@@ -35,7 +37,7 @@ function Home() {
   const products = [
     {
       image: product1,
-      title: "Miano",
+      title: "Milano",
       description: "Durable and stylish metal roofing sheets for long-lasting protection.",
     },
     {
@@ -61,6 +63,16 @@ function Home() {
     {
       image: product6,
       title: "Classic",
+      description: "Elegant and eco-friendly clay roofing tiles for a timeless look.",
+    },
+    {
+      image: product7,
+      title: "Sealant",
+      description: "Elegant and eco-friendly clay roofing tiles for a timeless look.",
+    },
+    {
+      image: product8,
+      title: "Flat Sheets",
       description: "Elegant and eco-friendly clay roofing tiles for a timeless look.",
     },
   ];
@@ -153,7 +165,7 @@ Your satisfaction is our top priority, and we are dedicated to delivering except
       <section className="py-16 bg-gray-100">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Our Products</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {products.map((product, index) => (
               <div
                 key={index}

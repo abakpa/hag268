@@ -146,8 +146,8 @@ function ProductDetails() {
   <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
   {/* Product Details */}
-  <div className="relative z-20 text-center text-white p-8 max-w-2xl bg-black bg-opacity-40 rounded-lg shadow-lg">
-    <h1 className="text-4xl font-bold mb-4">{product.name}</h1>
+  <div className="relative z-20  text-center text-white p-8 max-w-2xl bg-black bg-opacity-40 rounded-lg shadow-lg">
+    <h1 className="text-4xl font-bold mt-32 md:mt-0 mb-4">{product.name}</h1>
     <p className="text-lg">{product.description}</p>
   </div>
 </section>

@@ -38,44 +38,45 @@ function Home() {
     {
       image: product1,
       title: "Milano",
-      description: "Durable and stylish metal roofing sheets for long-lasting protection.",
+      description: "A premium stone-coated roofing sheet known for its strength, durability, and elegant finish, perfect for residential and commercial buildings.",
     },
     {
       image: product2,
       title: "Nails",
-      description: "Premium asphalt shingles for residential and commercial buildings.",
+      description: "High-quality roofing nails designed for secure fastening, ensuring stability and long-lasting performance in all weather conditions.",
     },
     {
       image: product3,
       title: "Bond",
-      description: "Elegant and eco-friendly clay roofing tiles for a timeless look.",
+      description: "Stone-coated bond roofing sheets provide a sleek, modern look with exceptional durability and weather resistance.",
     },
     {
       image: product4,
       title: "Shingle",
-      description: "Elegant and eco-friendly clay roofing tiles for a timeless look.",
+      description: "Stylish and durable shingle roofing sheets that offer a classic aesthetic with superior protection against harsh weather conditions.",
     },
     {
       image: product5,
       title: "Ridges",
-      description: "Elegant and eco-friendly clay roofing tiles for a timeless look.",
+      description: "Roofing ridges ensure a seamless finish at roof peaks, providing additional strength, protection, and aesthetic appeal.",
     },
     {
       image: product6,
       title: "Classic",
-      description: "Elegant and eco-friendly clay roofing tiles for a timeless look.",
+      description: "Classic stone-coated roofing sheets offer a traditional yet sophisticated design with outstanding durability and weather resistance.",
     },
     {
       image: product7,
       title: "Sealant",
-      description: "Elegant and eco-friendly clay roofing tiles for a timeless look.",
+      description: "Premium roofing sealant designed to prevent leaks and enhance the lifespan of your roof by providing a strong, waterproof barrier.",
     },
     {
       image: product8,
       title: "Flat Sheets",
-      description: "Elegant and eco-friendly clay roofing tiles for a timeless look.",
+      description: "Versatile flat roofing sheets that provide a smooth, modern look with excellent durability and energy efficiency for various structures.",
     },
   ];
+  
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -264,22 +265,34 @@ Your satisfaction is our top priority, and we are dedicated to delivering except
     
     {/* Our Products Section */}
     <div>
-      <h3 className="text-xl font-semibold mb-4">Our Products</h3>
-      <ul className="space-y-2">
-        <li className="flex items-center text-sm">
-          <span className="mr-2">✔</span> Metal Roofing Sheets
-        </li>
-        <li className="flex items-center text-sm">
-          <span className="mr-2">✔</span> Asphalt Shingles
-        </li>
-        <li className="flex items-center text-sm">
-          <span className="mr-2">✔</span> Clay Roofing Tiles
-        </li>
-        <li className="flex items-center text-sm">
-          <span className="mr-2">✔</span> PVC Roofing Materials
-        </li>
-      </ul>
-    </div>
+  <h3 className="text-xl font-semibold mb-4">Our Products</h3>
+  <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <li className="flex items-center text-sm">
+      <span className="mr-2">✔</span> Milano Roofing Sheets
+    </li>
+    <li className="flex items-center text-sm">
+      <span className="mr-2">✔</span> Shingles Roofing Sheets
+    </li>
+    <li className="flex items-center text-sm">
+      <span className="mr-2">✔</span> Classic Roofing Sheets
+    </li>
+    <li className="flex items-center text-sm">
+      <span className="mr-2">✔</span> Bond Roofing Sheets
+    </li>
+    <li className="flex items-center text-sm">
+      <span className="mr-2">✔</span> Flat Roofing Sheets
+    </li>
+    <li className="flex items-center text-sm">
+      <span className="mr-2">✔</span> Ridges
+    </li>
+    <li className="flex items-center text-sm">
+      <span className="mr-2">✔</span> Sealants
+    </li>
+    <li className="flex items-center text-sm">
+      <span className="mr-2">✔</span> Nails
+    </li>
+  </ul>
+</div>
     
     {/* Company Links Section */}
     <div>
@@ -308,7 +321,7 @@ Your satisfaction is our top priority, and we are dedicated to delivering except
           <span className="mr-2">📍</span> No 2 Abimbola street isolo industrial estate by IBWAS FILLING station isolo Lagos Nigeria.
         </li>
         <li className="flex items-center">
-          <span className="mr-2">📞</span> +234 8023205544
+          <span className="mr-2">📞</span> +234 8169525150, 8103025751, 8037625357.
         </li>
         <li className="flex items-center">
           <span className="mr-2">📧</span> info@hag268.com

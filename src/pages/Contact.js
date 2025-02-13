@@ -135,22 +135,34 @@ function Contact() {
     
     {/* Our Products Section */}
     <div>
-      <h3 className="text-xl font-semibold mb-4">Our Products</h3>
-      <ul className="space-y-2">
-        <li className="flex items-center text-sm">
-          <span className="mr-2">✔</span> Metal Roofing Sheets
-        </li>
-        <li className="flex items-center text-sm">
-          <span className="mr-2">✔</span> Asphalt Shingles
-        </li>
-        <li className="flex items-center text-sm">
-          <span className="mr-2">✔</span> Clay Roofing Tiles
-        </li>
-        <li className="flex items-center text-sm">
-          <span className="mr-2">✔</span> PVC Roofing Materials
-        </li>
-      </ul>
-    </div>
+  <h3 className="text-xl font-semibold mb-4">Our Products</h3>
+  <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <li className="flex items-center text-sm">
+      <span className="mr-2">✔</span> Milano Roofing Sheets
+    </li>
+    <li className="flex items-center text-sm">
+      <span className="mr-2">✔</span> Shingles Roofing Sheets
+    </li>
+    <li className="flex items-center text-sm">
+      <span className="mr-2">✔</span> Classic Roofing Sheets
+    </li>
+    <li className="flex items-center text-sm">
+      <span className="mr-2">✔</span> Bond Roofing Sheets
+    </li>
+    <li className="flex items-center text-sm">
+      <span className="mr-2">✔</span> Flat Roofing Sheets
+    </li>
+    <li className="flex items-center text-sm">
+      <span className="mr-2">✔</span> Ridges
+    </li>
+    <li className="flex items-center text-sm">
+      <span className="mr-2">✔</span> Sealants
+    </li>
+    <li className="flex items-center text-sm">
+      <span className="mr-2">✔</span> Nails
+    </li>
+  </ul>
+</div>
     
     {/* Company Links Section */}
     <div>
@@ -179,7 +191,7 @@ function Contact() {
           <span className="mr-2">📍</span> No 2 Abimbola street isolo industrial estate by IBWAS FILLING station isolo Lagos Nigeria.
         </li>
         <li className="flex items-center">
-          <span className="mr-2">📞</span> +234 8023205544
+          <span className="mr-2">📞</span> +234 8169525150, 8103025751, 8037625357.
         </li>
         <li className="flex items-center">
           <span className="mr-2">📧</span> info@hag268.com

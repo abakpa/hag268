@@ -27,9 +27,9 @@ import subproduct61 from '../images/subclassic2.jpg';
 import subproduct62 from '../images/subclasic1.avif';
 import subproduct63 from '../images/subclassic3.avif';
 import product7 from '../images/sealant.jpg';
-import subproduct71 from '../images/sealant1.jpg';
-import subproduct72 from '../images/sealant2.jpeg';
-import subproduct73 from '../images/seallant3.jpeg';
+import subproduct71 from '../images/sealanthag2682.jpeg';
+import subproduct72 from '../images/sealanthag268.jpeg';
+import subproduct73 from '../images/sealanthag2682.jpeg';
 import product8 from '../images/flatsheetroof.webp';
 import subproduct81 from '../images/subflat1.avif';
 import subproduct82 from '../images/subflat2.avif';
@@ -109,9 +109,9 @@ const products = [
         image: product7,
         description: 'Roofing sealant is a vital protective layer that helps prevent leaks and enhances the durability of a roof. Designed to withstand harsh weather conditions, it seals gaps, cracks, and joints, ensuring a watertight and secure roofing system. Ideal for various roofing materials, roofing sealants provide long-lasting protection against moisture, UV rays, and temperature changes, keeping your roof in top condition for years.',
         related: [
-          { name: 'Big Size Sealant', image: subproduct71, description: 'Long-lasting and durable nails.' },
-          { name: 'Medium Size Sealant', image: subproduct72, description: 'Weather-resistant roofing nails.' },
-          { name: 'Small Size Seaalant', image: subproduct73, description: 'Premium nails with superior hold.' }
+          { name: 'Sealant', image: subproduct71, description: 'Long-lasting and durable nails.' },
+          { name: 'Sealant', image: subproduct72, description: 'Weather-resistant roofing nails.' },
+          { name: 'Seaalant', image: subproduct73, description: 'Premium nails with superior hold.' }
         ]
     },
     {
@@ -157,8 +157,8 @@ function ProductDetails() {
           <h2 className="text-2xl font-bold text-center mb-8">Different Types</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {product.related.map((item, index) => (
-              <div key={index} className="bg-white p-6 shadow-lg rounded-lg text-center">
-                <img src={item.image} alt={item.name} className="w-full h-40 object-cover mb-4 rounded" />
+              <div key={index} className="bg-white p-4 shadow-lg rounded-lg text-center">
+                <img src={item.image} alt={item.name} className="w-full h-40 object-cover mb-4 rounded h-80" />
                 <h3 className="text-xl font-semibold mb-2">{item.name}</h3>
                 {/* <p className="text-gray-600">{item.description}</p> */}
               </div>

@@ -21,7 +21,7 @@ function About() {
         Welcome to HAG268 Roofing Solutions
       </h1>
       <p className="text-lg">
-        Your one-stop destination for high-quality roofing materials, expert installation, and innovative building solutions. Let us help you build a future that stands strong.
+        Your one-stop destination for high-quality roofing materials and innovative building solutions. Let us help you build a future that stands strong.
       </p>
     </div>
   </section>
@@ -31,13 +31,13 @@ function About() {
         <div className="lg:w-2/3 text-center lg:text-left mb-8 lg:mb-0">
           <h2 className="text-3xl font-bold mb-6">Welcome to HAG268</h2>
           <p className="text-sm text-gray-700">
-            Welcome to HAG268! We are committed to providing high-quality roofing materials and expert installation services. With years of experience in the industry, we understand the importance of durable and reliable roofing solutions for both residential and commercial buildings. Our mission is to ensure customer satisfaction through affordability, quality, and professionalism.
+            Welcome to HAG268! We are committed to providing high-quality roofing materials. With years of experience in the industry, we understand the importance of durable and reliable roofing solutions for both residential and commercial buildings. Our mission is to ensure customer satisfaction through affordability, quality, and professionalism.
             <br />
             <br />
-            At HAG268, we believe that a strong and well-designed roof is the cornerstone of any structure. That’s why we partner with trusted manufacturers to supply only the best materials that meet industry standards. Whether you are constructing a new building, renovating, or seeking expert advice, our team is always ready to guide you every step of the way.
+            At HAG268, we believe that a strong and well-designed roof is the cornerstone of any structure. That’s why we partner with trusted manufacturers to supply only the best materials that meet industry standards. Whether you are constructing a new building or renovating, our team is always ready to guide you every step of the way.
             <br />
             <br />
-            From metal roofing sheets and asphalt shingles to clay roofing tiles, we offer a diverse range of products tailored to suit your needs. Our professional installation team works with precision and attention to detail, ensuring that your roof not only looks great but also provides lasting protection for years to come.
+            From classic roofing sheets and bond roofing sheet to milano roofing tiles, we offer a diverse range of products tailored to suit your needs. Our team works with precision and attention to detail, ensuring that your roof not only looks great but also provides lasting protection for years to come.
             <br />
             <br />
             Your satisfaction is our top priority, and we are dedicated to delivering exceptional service and innovative solutions that you can trust. Choose HAG268 for all your roofing needs, and let us help you build a future that stands strong.

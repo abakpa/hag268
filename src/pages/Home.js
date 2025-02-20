@@ -132,13 +132,15 @@ function Home() {
           <div className="lg:w-2/3 text-center lg:text-left mb-8 lg:mb-0">
             <h2 className="text-3xl font-bold mb-6">Welcome to Hag268</h2>
             <p className="text-sm text-gray-700">
-            Welcome to HAG268! We are committed to providing high-quality roofing materials and expert installation services. With years of experience in the industry, we understand the importance of durable and reliable roofing solutions for both residential and commercial buildings. Our mission is to ensure customer satisfaction through affordability, quality, and professionalism.
+            Welcome to HAG268 – Your Trusted Roofing Materials Supplier!
 
-At HAG268, we believe that a strong and well-designed roof is the cornerstone of any structure. That’s why we partner with trusted manufacturers to supply only the best materials that meet industry standards. Whether you are constructing a new building, renovating, or seeking expert advice, our team is always ready to guide you every step of the way.
+At HAG268, we specialize in providing high-quality roofing materials to meet all your construction and renovation needs. With years of experience in the industry, we are committed to delivering durable, reliable, and affordable roofing solutions for both residential and commercial buildings.
 
-From metal roofing sheets and asphalt shingles to clay roofing tiles, we offer a diverse range of products tailored to suit your needs. Our professional installation team works with precision and attention to detail, ensuring that your roof not only looks great but also provides lasting protection for years to come.
+We partner with top manufacturers to supply premium roofing products that meet industry standards. Whether you need Bond Roofing Sheets, Milano Roofing Sheets, Classic Roofing Sheets, or other essential roofing components, we have a wide range of options to suit your preferences and budget.
 
-Your satisfaction is our top priority, and we are dedicated to delivering exceptional service and innovative solutions that you can trust. Choose HAG268 for all your roofing needs, and let us help you build a future that stands strong.
+Our mission is to ensure customer satisfaction by offering top-notch products, competitive prices, and exceptional service. When you choose HAG268, you’re choosing quality, durability, and excellence in roofing materials.
+
+Let us supply you with the best roofing solutions to protect and enhance your property. Choose HAG268 – Where Quality Meets Reliability!
             </p>
             <p className='text-center mt-10'>
             <Link
@@ -251,7 +253,7 @@ Your satisfaction is our top priority, and we are dedicated to delivering except
 
   <div className="relative z-10 text-white px-4">
     <h2 className="text-3xl font-bold mb-4">NOT SURE OF YOUR BUILDING NEEDS?</h2>
-    <p className="text-lg mb-6">Speak to our expert today for personalized advice and solutions!</p>
+    <p className="text-lg mb-6">Speak to our agent today for personalized advice and solutions!</p>
     <Link
       to="/contact"
       className="bg-amber-500 text-gray-800 py-2 px-6 rounded-full text-xl font-semibold transition-all duration-300 hover:bg-yellow-500"

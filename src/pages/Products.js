@@ -41,7 +41,7 @@ function Products() {
             Explore Our Premium Roofing Solutions
           </h1>
           <p className="text-lg">
-            Discover a wide range of high-quality roofing materials tailored to suit your building needs. From durable metal sheets to elegant classic tiles, our products combine style, strength, and reliability to ensure your structure stands the test of time.
+            Discover a wide range of high-quality roofing materials tailored to suit your building needs. From durable roofing sheets to elegant classic tiles, our products combine style, strength, and reliability to ensure your structure stands the test of time.
           </p>
         </div>
       </section>
